@@ -46,7 +46,7 @@ function renderTask(task){
    });
 
    li.querySelector('button').addEventListener('click',e=>{
-      e.stopPropagation();//Stop bubbling to li. or prevent toggle from firing.
+      e.stopPropagation();//Stop bubbling to li. or prevent toggle from firing.Sp it prevents getting effected by li since button is inside the li.
       
       tasks = tasks.filter(t => t.id!== task.id);
       li.remove();
